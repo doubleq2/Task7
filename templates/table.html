@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Tables</title>
+</head>
+<body>
+    {%for i,j in tables.items()%}
+        <table class="text">
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>|</td>
+                <td>{{i}}</td>
+                <td>|</td>
+                <td>{{j}}</td>
+                <td>|</td>
+            </tr>
+        </table>
+    {% endfor %}
+</body>
+</html>

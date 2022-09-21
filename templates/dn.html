@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Dn</title>
+</head>
+<body>
+    {%for i in tables.items()%}
+        {%if dn in i[0]%}
+        <table class="text">
+            <tr>
+                <td>{{i[0]}}</td>
+                <td>|</td>
+                <td>{{i[1]}}</td>
+            </tr>
+        </table>
+        {%endif%}
+    {% endfor %}
+</body>
+</html>
